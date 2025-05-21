@@ -4,6 +4,7 @@
 // expected return
 // duration
 
+// input
 type InvestmentData = {
   initialAmount: number;
   annualContribution: number;
@@ -11,6 +12,7 @@ type InvestmentData = {
   duration: number;
 };
 
+// intermediate state
 type InvestmentResult = {
   year: string;
   totalAmount: number;
@@ -18,6 +20,7 @@ type InvestmentResult = {
   totalInterestEarned: number;
 };
 
+// output
 type CalculationResult = InvestmentResult[] | string;
 
 function calculateInvestment(data: InvestmentData): CalculationResult {
