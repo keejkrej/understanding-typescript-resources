@@ -77,3 +77,5 @@ class ProjectState extends State<Project> {
     }
   }
 }
+
+const projectState = ProjectState.getInstance()
